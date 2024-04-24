@@ -25,6 +25,7 @@
 @media (prefers-reduced-motion: no-preference) {
   .logo #separator {
     animation: logo-translate 1 2s linear;
+    transform-origin: center;
   }
 }
 
