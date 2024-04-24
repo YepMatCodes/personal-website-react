@@ -16,12 +16,14 @@
 }
 
 .logo path {
-  fill: #fff;
-  fill-opacity: 100%;
+}
+
+.logo #separator {
+  width: 1102px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .logo path {
+  .logo #separator {
     animation: logo-translate 1 2s linear;
   }
 }
@@ -38,10 +40,10 @@
 
 @keyframes logo-translate {
   from {
-    fill-opacity: 50%;
+    width: 0px;
   }
   to {
-    fill-opacity: 100%;
+    width: 1102px;
   }
 }
 
