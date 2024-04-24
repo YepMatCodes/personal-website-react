@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import './MobileApp.css'
@@ -8,6 +8,10 @@ import './css/icons.css'
 import { isMobile } from 'react-device-detect';
 
 function App() {
+  useEffect( () => {
+    document.title = 'Mathew Norman';
+  });
+
   if (isMobile) {
     return (
       <BrowserRouter>
