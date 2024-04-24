@@ -15,8 +15,6 @@
   width: 50%;
 }
 
-.logo path {
-}
 
 .logo #separator {
   width: 1102px;
@@ -39,6 +37,8 @@
   color: white;
 }
 
+
+
 @keyframes logo-translate {
   from {
     width: 0px;
@@ -46,9 +46,6 @@
   to {
     width: 1102px;
   }
-}
-
-.footer {
 }
 
 .button-link {
