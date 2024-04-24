@@ -1,11 +1,15 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { isMobile } from 'react-device-detect';
+
+import './css/icons.css'
+
+// Pages
 import './App.css';
 import './MobileApp.css'
 import Home from './pages/Home'
 import MobileHome from './pages/MobileHome'
-import './css/icons.css'
-import { isMobile } from 'react-device-detect';
+
 
 function App() {
   useEffect( () => {
