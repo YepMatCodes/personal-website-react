@@ -22,7 +22,7 @@ function Logo() {
                 <DesktopLogo title="Mathew Norman" aria-label='Mathew Norman' />
                 <div className='separator'></div>
                 {/* <div className='tag-line'>Software Engineer</div> */}
-                <div className='tag-line'><AnimatedTagline />Engineer</div>
+                <div className='tag-line'><AnimatedTagline /> Engineer</div>
             </div>
         );
     }
