@@ -14,24 +14,44 @@
     margin-bottom: 15px;
 }
 
-.mobile-logo, .logo-name {
-    width: 200px;
-    margin-bottom: 15px;
-}
-
 .separator {
     border-top: 2px solid white;
-    width: 175px;
+    width: 700px;
     border-radius: 3px;
     animation: logo-translate 1 2s linear;
 }
-
 
 .logo-container .tag-line {
     font-weight: 300;
 }
 
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+    
+    .logo, .logo-name {
+        width: 200px;
+        margin-bottom: 15px;
+    }
+
+    .separator {
+        border-top: 2px solid white;
+        width: 175px;
+        border-radius: 3px;
+        animation: mobile-logo-translate 1 2s linear;
+    }
+}
+
+/* Animation keyframes  */
 @keyframes logo-translate {
+    0% {
+        width: 100px;
+    }
+    100% {
+        width: 700px;
+    }
+}
+
+@keyframes mobile-logo-translate {
     0% {
         width: 20px;
     }
