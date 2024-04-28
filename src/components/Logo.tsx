@@ -3,6 +3,8 @@ import { isMobile } from 'react-device-detect';
 import { ReactComponent as DesktopLogo } from "../images/separated-desktop-logo.svg";
 import { ReactComponent as MobileLogo } from "../images/separated-mobile-logo.svg";
 
+import AnimatedTagline from "./AnimatedTagline";
+
 import "./Logo.css";
 
 function Logo() {
@@ -19,7 +21,8 @@ function Logo() {
             <div className='logo-container'>
                 <DesktopLogo title="Mathew Norman" aria-label='Mathew Norman' />
                 <div className='separator'></div>
-                <div className='tag-line'>Software Engineer</div>
+                {/* <div className='tag-line'>Software Engineer</div> */}
+                <div className='tag-line'><AnimatedTagline />Engineer</div>
             </div>
         );
     }
