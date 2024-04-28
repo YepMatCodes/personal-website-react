@@ -1,6 +1,6 @@
 import "./css/Home.css";
-import Logo from "../components/Logo";
 
+import Logo from "../components/Logo";
 
 function Home() {
   return (
