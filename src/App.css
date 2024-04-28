@@ -1,18 +1,14 @@
 .App {
   text-align: center;
-  background: linear-gradient(
-			280deg,
-			rgba(0, 38, 91, 1),
-			rgba(0, 38, 157, 0.2) 70.71%
-		),
-		linear-gradient(180deg, rgba(0, 38, 91, 1), rgba(0, 38, 125, 0.2) 70.71%),
-		linear-gradient(90deg, rgba(0, 38, 91, 1), rgba(0, 38, 109, 0.2) 70.71%),
-		linear-gradient(0deg, rgba(0, 38, 91, 1), rgba(0, 38, 93, 0.2) 70.71%);
 }
 
 .logo {
   height: 50%;
   width: 50%;
+}
+
+.logo-background {
+  
 }
 
 

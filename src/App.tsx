@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { isMobile } from 'react-device-detect';
 
 import './css/icons.css'
+import './css/fira_code.css'
 
 // Pages
 import './App.css';
