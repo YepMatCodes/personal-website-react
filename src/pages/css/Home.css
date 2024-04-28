@@ -1,0 +1,26 @@
+.logo {
+    height: 50%;
+    width: 50%;
+}
+
+
+.logo #separator {
+    width: 1102px;
+}
+
+@keyframes logo-translate {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 1102px;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .logo #separator {
+        animation: logo-translate 1 2s linear;
+        transform-origin: center;
+    }
+}

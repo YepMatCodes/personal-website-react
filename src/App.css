@@ -2,27 +2,6 @@
   text-align: center;
 }
 
-.logo {
-  height: 50%;
-  width: 50%;
-}
-
-.logo-background {
-  
-}
-
-
-.logo #separator {
-  width: 1102px;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .logo #separator {
-    animation: logo-translate 1 2s linear;
-    transform-origin: center;
-  }
-}
-
 .header {
   min-height: 100vh;
   display: flex;
@@ -31,40 +10,4 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-
-
-@keyframes logo-translate {
-  from {
-    width: 0px;
-  }
-  to {
-    width: 1102px;
-  }
-}
-
-.button-link {
-  padding: 0;
-  text-align: center;
-	color: white;
-    
-  border: none;   
-    
-  border-radius: 5px;
-  font-size: 1em;
-  height: 35px;
-  width: 35px;
-  margin: 2px;
-
-  background: linear-gradient(to bottom, rgb(0,68,121,1) 5%, rgb(0,68,187) 100%);
-
-  background: #004479;
-  background-image: -webkit-linear-gradient(top, #004479, #0044bb);
-  background-image: -moz-linear-gradient(top, #004479, #0044bb);
-  background-image: -ms-linear-gradient(top, #004479, #0044bb);
-  background-image: -o-linear-gradient(top, #004479, #0044bb);
-  background-image: linear-gradient(to bottom, #004479, #0044bb);
-
-  z-index: 991;
 }
