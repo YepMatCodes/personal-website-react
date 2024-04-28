@@ -23,7 +23,6 @@ function App() {
       <Routes>
         <Route path="/" element={<MobileHome />}>
           <Route index element={<MobileHome />} />
-          {/* <Route path="*" element={<NoPage />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>
