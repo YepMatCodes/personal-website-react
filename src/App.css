@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.header {
+.landing-page-container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;

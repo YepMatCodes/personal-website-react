@@ -5,13 +5,11 @@ import Logo from "../components/Logo";
 function Home() {
   return (
     <div className="App">
-      <header className="header">
+      <header className="landing-page-container">
         <Logo />
       </header>
       <footer>
-      <div className="logo-background">
-        Testing the fonts and stuff
-      </div>
+      
       </footer>
     </div>
   );
