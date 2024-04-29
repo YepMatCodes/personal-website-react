@@ -1,0 +1,49 @@
+name: Build and Deploy to Lightsail Host
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set Node.js 20.x
+      uses: actions/setup-node@v3
+      with:
+        node-version: 20.x
+    - name: Run install
+      uses: borales/actions-yarn@v4
+      with:
+        cmd: install # will run `yarn install` command
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # if needed
+    - name: Build production bundle
+      uses: borales/actions-yarn@v4
+      with:
+        cmd: build:prod # will run `yarn build:prod` command
+    - name: Deploy to FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: matnorman.com
+        port: 22
+        protocol: ftps
+        username: bitnami
+        password: ${{ secrets.ftp_password }}
+        local-dir: ./build/
+        server-dir: htdocs/
+  
+  --------------
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v4
+    
+    - name: 📂 Sync files
+      
+      with:
+        server: ftp.samkirkland.com
+        username: myFtpUserName
+        password: ${{ secrets.ftp_password }}
