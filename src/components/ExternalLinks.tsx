@@ -3,7 +3,8 @@ import { useState } from 'react';
 import './ExternalLinks.css';
 
 // Import icons
-import { IconBrandGithub, IconBrandLinkedin, IconBrandInstagram, IconCodeCircle as IconCodeOpen, IconCodeCircle2 as IconCodeClose } from '@tabler/icons-react';
+import { IconFolder as IconSocialOpen, IconFolderOpen as IconSocialClose} from '@tabler/icons-react';
+import { IconBrandGithub, IconBrandLinkedin, IconBrandInstagram } from '@tabler/icons-react';
 
 function ExternalLinks() {
     const [showSocialIcons, setShowDiv] = useState<boolean>(false);
@@ -15,9 +16,9 @@ function ExternalLinks() {
 
     return (
         <div id='social-popout-container' className={ showSocialIcons ? 'popout-active' : ''}>
-            <button id='social-popout-trigger' className={ showSocialIcons ? 'popout-active' : ''} onClick={handleButtonClick}>
+            <button id='social-popout-button' className={ showSocialIcons ? 'popout-active' : ''} onClick={handleButtonClick}>
                 {   
-                    (!showSocialIcons ? ( <IconCodeOpen /> ) : ( <IconCodeClose /> ))
+                    (!showSocialIcons ? ( <IconSocialOpen /> ) : ( <IconSocialClose /> ))
                 }
             </button>
             {

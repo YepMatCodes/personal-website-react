@@ -1,18 +1,23 @@
+#social-popout-container,
+#social-popout-container * {
+    box-sizing: border-box;
+}
+
 #social-popout-container {
     position: absolute;
     bottom: 0;
     left: 0;
 
-    display: inline-flex;
-    width: 2em;
+    display: flex;
+    width: 3em;
+    height: 3em;
 
     border-radius: 0 10px 0 0;
-
-    padding: 15px 15px;
 
     background-color: rgba(0, 0, 0, 0.2);
 
     justify-content: center;
+    vertical-align: middle;
 
     transition: 2s;
     transition: outline 1s ease-in-out;
@@ -39,47 +44,48 @@
     border-radius: 20px;
 }
 
-#social-popout-container button {
-    display: flex;
-    justify-content: center;
-    /* Center horizontally */
-    align-items: center;
+#social-popout-button,
+#social-popout-button svg {
+    display: inline-block;
+    vertical-align: middle;
 }
 
-#social-popout-trigger {
+#social-popout-button {
     color: white;
+    text-align: center;
 
-    /* border-radius: 0 10px 0 0; */
+    width: 100%;
+    height: 100%;
+
     border: none;
-    padding: 2px 2px;
+
     background-color: rgba(0, 0, 0, 0);
+
 }
 
-#social-popout-trigger svg {
-    width: 2em;
-    height: 2em;
+#social-popout-button svg {
+    text-align: center;
+
+    width: 1.5em;
+    height: 1.5em;
     stroke-width: 1px;
 }
 
-#social-popout-trigger:hover {
-    /* outline-width: 5px; */
-    /* background-color: #00487f; */
-    /* padding: 15px 24px;
-    transition: padding 0.3s ease;  */
-}
-
-#social-popout-trigger.popout-active {
+#social-popout-button.popout-active {
     background-color: rgba(0, 38, 93, 0.4);
     outline-width: 10px;
 
     margin-left: 0px;
 
     border-radius: 50%;
-    padding: 10px;
-    transition: padding 0.3s ease;
+
+    margin: 5px 0;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
 }
 
-#social-popout-trigger.popout-active:hover {
+#social-popout-button.popout-active:hover {
     background-color: rgba(0, 38, 93, 0.8);
     outline: solid 1px #00487f;
 }
@@ -89,13 +95,6 @@
     background-color: rgba(0, 72, 127, 0.8);
 
     margin-left: 25px;
-
-    /* padding: 8px 8px; */
-    /* margin-left: 30px;
-    margin-bottom: 10px; */
-
-    /* border: 1px solid #00265d;
-    border-radius: 10px; */
 }
 
 .social-icon-button {
