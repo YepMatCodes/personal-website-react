@@ -1,6 +1,7 @@
 import "./css/Home.css";
 
 import Logo from "../components/Logo";
+import ExternalLinks from "../components/ExternalLinks";
 
 function Home() {
   return (
@@ -9,7 +10,7 @@ function Home() {
         <Logo />
       </header>
       <footer>
-      
+        <ExternalLinks />
       </footer>
     </div>
   );
