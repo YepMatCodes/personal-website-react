@@ -1,0 +1,43 @@
+name: Build and Deploy to Lightsail Host
+on:
+  push:
+    branches: [ release ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    
+    - name: Set Node.js 20.x
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20.x
+    
+    - name: Run install
+      uses: borales/actions-yarn@v4
+      with:
+        cmd: install # will run `yarn install` command
+    
+    - name: Build production bundle
+      uses: borales/actions-yarn@v4
+      with:
+        cmd: build # will run `yarn build` command
+    
+    - name: Deploy to Staging server
+      uses: easingthemes/ssh-deploy@main
+      with:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        ARGS: "-rlgoDzc -i"
+        SOURCE: "build/"
+        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+        REMOTE_USER: ${{ secrets.REMOTE_USER }}
+        TARGET: htdocs/
+        EXCLUDE: "/dist/, /node_modules/"
+        SCRIPT_BEFORE: |
+          whoami
+          ls -al
+        SCRIPT_AFTER: |
+          whoami
+          ls -al
+          echo $RSYNC_STDOUT
