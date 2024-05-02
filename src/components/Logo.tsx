@@ -5,7 +5,7 @@ import { ReactComponent as MobileLogo } from "../images/separated-mobile-logo.sv
 
 import AnimatedTagline from "./AnimatedTagline";
 
-import "./Logo.css";
+import "./Logo.scss";
 
 function Logo() {
         return ( 

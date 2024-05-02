@@ -98,6 +98,11 @@
 }
 
 .social-icon-button {
+    display: flex;
+    text-align: center;
+    align-content: center;
+    vertical-align: middle;
+
     margin: 5px 10px;
     padding: 5px;
     width: 40px;
@@ -119,5 +124,8 @@
 }
 
 .social-icon-button svg {
-    stroke-width: 1px;
+    stroke-width: 1.5px;
+
+    margin: 0 auto;
+    display: block;
 }

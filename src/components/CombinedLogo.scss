@@ -1,16 +1,15 @@
 .logo {
     height: 60%;
     width: 60%;
-}
 
-.logo #separator {
-    animation: desktop-logo-translate 1 2s linear;
-    transform-origin: center;
+    #separator {
+        animation: desktop-logo-translate 1 2s linear;
+        transform-origin: center;
+    }
 }
 
 /* Mobile styles */
 @media screen and (max-width: 768px) {
-
     .logo {
         height: 70%;
         width: 70%;
@@ -26,9 +25,4 @@
     to {
         width: 100%;
     }
-}
-
-@keyframes mobile-logo-translate {
-    from {}
-    to {}
 }

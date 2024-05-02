@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 // import { isMobile } from 'react-device-detect';
 
-import './App.css';
+import './App.scss';
 
 import './css/icons.css' // lineicons support
 import './css/fira_code.css'
