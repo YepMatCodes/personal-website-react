@@ -34,7 +34,7 @@ deploy() {
 
     # Check the user's response
     if [[ $answer == [Yy] ]]; then
-        rsync -rlgoDzcv ./build/ node-lightsail:~/test/
+        rsync -rlgoDzcv ./build/ node-lightsail:~/htdocs/
         echo "Project deployed successfully."
     else
         echo "Operation canceled."
