@@ -8,24 +8,20 @@ import AnimatedTagline from "./AnimatedTagline";
 import "./Logo.css";
 
 function Logo() {
-    if (isMobile) {
         return ( 
             <div className='logo-container'>
-                <MobileLogo title="Mathew Norman" aria-label='Mathew Norman' />
+                {
+                    (isMobile ? (
+                        <MobileLogo title="Mathew Norman" aria-label='Mathew Norman' />
+                    ) : (
+                        <DesktopLogo title="Mathew Norman" aria-label='Mathew Norman' />
+                    ))
+                }
+                {/* <MobileLogo title="Mathew Norman" aria-label='Mathew Norman' /> */}
                 <div className='separator'></div>
-                <div className='tag-line'>Software Engineer</div>
-            </div>
-        );
-    } else {
-        return ( 
-            <div className='logo-container'>
-                <DesktopLogo title="Mathew Norman" aria-label='Mathew Norman' />
-                <div className='separator'></div>
-                {/* <div className='tag-line'>Software Engineer</div> */}
                 <div className='tag-line'><AnimatedTagline /> Engineer</div>
             </div>
         );
-    }
 }
 
 export default Logo;
