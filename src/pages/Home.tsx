@@ -1,4 +1,4 @@
-import "./css/Home.css";
+import "./Home.scss";
 
 import Logo from "../components/Logo";
 import ExternalLinks from "../components/ExternalLinks";

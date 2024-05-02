@@ -1,0 +1,98 @@
+#social-popout-container {
+	box-sizing: border-box;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	width: 3em;
+	height: 3em;
+	border-radius: 0 10px 0 0;
+	background-color: rgba(0, 0, 0, 0.2);;
+	justify-content: center;
+	vertical-align: middle;
+	transition: 2s;
+	transition: outline 1s ease-in-out;
+	transition: box-shadow 0.8s ease-in-out;
+	* {
+		box-sizing: border-box;
+	}
+	&:hover {
+		&:not(.popout-active) {
+			background-color: #00265d;
+			outline: solid 2px #00487f;
+			-webkit-box-shadow: 15px -15px 106px 2px rgba(238, 238, 238, 0.3);
+			-moz-box-shadow: 15px -15px 106px 2px rgba(238, 238, 238, 0.3);
+			box-shadow: 15px -15px 106px 2px rgba(238, 238, 238, 0.3);
+		}
+	}
+}
+#social-popout-container.popout-active {
+	background-color: #00487f;
+	height: auto;
+	width: auto;
+	padding: 15px 24px 15px 10px;
+	border-radius: 20px;
+}
+#social-popout-button {
+	display: inline-block;
+	vertical-align: middle;
+	color: white;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	border: none;
+	background-color: rgba(0, 0, 0, 0);
+	svg {
+		display: inline-block;
+		vertical-align: middle;
+		text-align: center;
+		width: 1.5em;
+		height: 1.5em;
+		stroke-width: 1px;
+	}
+}
+#social-popout-button.popout-active {
+	background-color: rgba(0, 38, 93, 0.4);
+	outline-width: 10px;
+	margin-left: 0px;
+	border-radius: 50%;
+	margin: 5px 0;
+	padding: 5px;
+	width: 40px;
+	height: 40px;
+	&:hover {
+		background-color: rgba(0, 38, 93, 0.8);
+		outline: solid 1px #00487f;
+	}
+}
+#social-popout-icons {
+	display: inline-flex;
+	background-color: rgba(0, 72, 127, 0.8);
+	margin-left: 25px;
+}
+.social-icon-button {
+	display: flex;
+	text-align: center;
+	align-content: center;
+	vertical-align: middle;
+	margin: 5px 10px;
+	padding: 5px;
+	width: 40px;
+	height: 40px;
+	color: rgba(255, 255, 255, 0.60);
+	background: rgba(255, 255, 255, 0.25);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	&:hover {
+		color: rgba(255, 255, 255, 0.80);
+		background: rgba(255, 255, 255, 0.5);
+	}
+	svg {
+		stroke-width: 1.5px;
+		margin: 0 auto;
+		display: block;
+	}
+}

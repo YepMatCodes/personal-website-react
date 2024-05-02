@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import './ExternalLinks.css';
+import './ExternalLinks.scss';
 
 // Import icons
 import { IconFolder as IconSocialOpen, IconFolderOpen as IconSocialClose} from '@tabler/icons-react';
