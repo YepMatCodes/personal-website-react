@@ -4,7 +4,7 @@ import './ExternalLinks.css';
 
 // Import icons
 import { IconFolder as IconSocialOpen, IconFolderOpen as IconSocialClose} from '@tabler/icons-react';
-import { IconBrandGithub, IconBrandLinkedin, IconBrandInstagram } from '@tabler/icons-react';
+import { IconBrandGithub, IconBrandLinkedin, IconBrandInstagram, IconCamera } from '@tabler/icons-react';
 
 function ExternalLinks() {
     const [showSocialIcons, setShowDiv] = useState<boolean>(false);
@@ -24,9 +24,11 @@ function ExternalLinks() {
             {
                 showSocialIcons &&
                 <div id='social-popout-icons'>
-                    <button className='social-icon-button'> <IconBrandGithub /> </button>
-                    <button className='social-icon-button'> <IconBrandLinkedin /> </button>
-                    <button className='social-icon-button'> <IconBrandInstagram /> </button>
+                    <a href="https://github.com/themathewnorman" className='social-icon-button'> <IconBrandGithub /> </a>
+                    <a href="https://linkedin.com/in/mathewnorman" className='social-icon-button'> <IconBrandLinkedin /> </a>
+                    <a href="https://instagram.com/mathews.wildlife" className='social-icon-button'> <IconBrandInstagram /> </a>
+                    <a href="https://mathews.pics" className='social-icon-button'> <IconCamera /> </a>
+
                 </div>
             }
             
