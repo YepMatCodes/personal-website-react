@@ -29,4 +29,4 @@ Your app is ready to be deployed!
 
 ### `yarn deploy`
 
-Builds the app (see [build](# yarn build)) then runs the [deployment script](resources/scripts/deploy.sh) to deploy the build to the web server using rsync.
+Builds the app (see the above build section) then runs the [deployment script](resources/scripts/deploy.sh) to deploy the build to the web server using rsync.
