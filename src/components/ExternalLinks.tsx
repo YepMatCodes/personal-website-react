@@ -4,7 +4,7 @@ import './ExternalLinks.scss';
 
 // Import icons
 import { IconFolder as IconSocialOpen, IconFolderOpen as IconSocialClose} from '@tabler/icons-react';
-import { IconBrandGithub, IconBrandLinkedin, IconBrandInstagram, IconCamera } from '@tabler/icons-react';
+import { IconBrandGithub, IconBrandLinkedin, IconBrandInstagram } from '@tabler/icons-react';
 
 function ExternalLinks() {
     const [showSocialIcons, setShowDiv] = useState<boolean>(false);
