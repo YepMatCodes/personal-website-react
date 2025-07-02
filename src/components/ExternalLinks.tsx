@@ -24,11 +24,9 @@ function ExternalLinks() {
             {
                 showSocialIcons &&
                 <div id='social-popout-icons'>
-                    <a href="https://github.com/themathewnorman" className='social-icon-button'> <IconBrandGithub /> </a>
+                    <a href="https://github.com/YepMatCodes" className='social-icon-button'> <IconBrandGithub /> </a>
                     <a href="https://linkedin.com/in/mathewnorman" className='social-icon-button'> <IconBrandLinkedin /> </a>
                     <a href="https://instagram.com/mathews.wildlife" className='social-icon-button'> <IconBrandInstagram /> </a>
-                    <a href="https://mathews.pics" className='social-icon-button'> <IconCamera /> </a>
-
                 </div>
             }
             
